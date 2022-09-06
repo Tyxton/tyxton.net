@@ -1,0 +1,171 @@
+.content, .navi {
+	background: black;
+	transition: 0.3s;
+	opacity: 0.9;
+	border: 1px solid var(--turq);
+	box-shadow: 2px 2px 0 var(--ltur), 
+	            4px 4px 0 var(--dtur);
+}
+
+.content:hover, .navi:hover {
+	opacity: 1;
+}
+
+.navi {
+  opacity: 1;
+  position: fixed;
+  float: left;
+  width: 160px;
+  padding: 4px;
+}
+
+.content {
+	margin-left: 180px;
+	padding: 8px 16px 8px 16px;
+}
+
+body {
+  background: url('/powerlines_w.gif') no-repeat center center black;
+  background-attachment: fixed;
+  background-position: bottom left;
+  background-size:cover;
+  color: white;
+}
+
+.album {
+	width: 160px;
+	height: 160px;
+}
+
+.ulalbum {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.albumdesc {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 10px;	
+}
+
+.albumtext {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+.imgdesc {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding: 10px;
+}
+
+.navimg {
+    display: block;
+    margin-bottom: 8px;
+    filter: grayscale(0);
+}
+
+.nav:hover {
+  opacity: 1;
+}
+
+pre code {
+	background-color: #222222;
+	border: 2px solid var(--dtur);
+	display: block;
+	padding: 20px;
+	width: 600px;
+}
+
+code {
+	font-size= 120%;
+}
+
+.bannerimg {
+	border: unset;
+	filter: unset;
+	width: 240px;
+	height: 60px;
+}
+
+.nomargin{
+  margin: 0;
+  list-style-image: url('https://www.lejlart.com/mypixel/rolakkuma.gif');
+}
+
+/* Audio Player */
+
+.player-container {
+	position: relative;
+	display: flex;
+	padding: 10px 20px 0 10px
+}
+
+.player-albm {
+	display: flex;
+	float: left;
+	width: 400px;
+	padding: 10px 5px 10px 5px;
+}
+
+.player-interface {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px;
+}
+
+.player-albm-info {
+	display: flex;
+	flex-direction: column;
+	padding 5px;
+	float: left;
+}
+
+.player-controls {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.media-button {
+  border: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  text-align: center;
+}
+
+.button-icons {
+  border-radius: 100%;
+  margin-top: auto;
+  padding: 5px;
+}
+
+.play-button {
+	background: url('/play_arrow_black_18dp.svg') no-repeat;
+}
+
+.skip-button {
+}
+
+.back-button{
+}
+
+.button-text {
+	margin-top: auto;
+}
